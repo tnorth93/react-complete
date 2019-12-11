@@ -3,18 +3,19 @@ import './App.css';
 import Person from './Person/Person';
 
 const app = props => {
-  const [ personsState, setPersonsState ] = useState({
+  const [personsState, setPersonsState] = useState({
     persons: [
       { name: 'Tom', age: 26 },
       { name: 'Kelly', age: 27 },
       { name: 'Nero Beans', age: 4 }
     ],
-    otherState: 'some other value'
   });
+
+  const [otherState, setOtherState] = useState('some other value');
 
   const switchNameHandler = () => {
     // Don't do this!!!!!!!! personsState.persons[0].name = 'Thomas';
-    this.setState({
+    setPersonsState({
      persons: [
        { name: 'Thomas', age: 26},
        { name: 'Kelly', age: 27},

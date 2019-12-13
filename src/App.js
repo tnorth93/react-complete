@@ -43,8 +43,8 @@ class App extends Component {
       <Person 
         name={this.state.persons[1].name} 
         age={this.state.persons[1].age}
-        click={this.switchNameHandler.bind(this, 'Tom!')}/>
-        changed={this.nameChangedHandler}
+        click={this.switchNameHandler.bind(this, 'Tom!')}
+        changed={this.nameChangedHandler}/>
       <Person 
         name={this.state.persons[2].name} 
         age={this.state.persons[2].age}/>

@@ -52,10 +52,9 @@ class App extends Component {
       <h1>Hi, I'm a React App</h1>
       <button
         style={style}
-        onClick={this.togglePersonHandler}> Switch Name </button>
-      { 
-        this.state.showPersons ? 
-          <div>
+        onClick={this.togglePersonHandler}> Toggle Persons </button>
+      
+        <div>
           <Person
             name={this.state.persons[0].name} 
             age={this.state.persons[0].age}/>
@@ -67,7 +66,7 @@ class App extends Component {
           <Person 
             name={this.state.persons[2].name} 
             age={this.state.persons[2].age}/>
-        </div> : null
+        </div>
       }
     </div>
     );

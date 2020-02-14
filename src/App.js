@@ -32,13 +32,12 @@ class App extends Component {
       ...this.state.persons[personIndex]
     }
 
-    this.setState({
-      persons: [
-        { name: 'Tom', age: 26},
-        { name: event.target.value, age: 27},
-        { name: 'Nero Beans', age: 4}
-      ]
-    })
+    person.name = event.target.value;
+
+    const persons = [...this.state.persons];
+    persons[personIndex] = person;
+
+    this.setState({persons: persons})
    }
 
    deletePersonHandler = (personIndex) => {

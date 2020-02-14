@@ -23,7 +23,7 @@ class App extends Component {
     })
    }
 
-  nameChangedHandler = (event) => {
+  nameChangedHandler = (event, id) => {
     this.setState({
       persons: [
         { name: 'Tom', age: 26},
@@ -65,6 +65,7 @@ class App extends Component {
                 name={person.name}
                 age={person.age}
                 key={person.id}
+                changed={() => this.nameChangedHandler()}
                 />
           })}
         </div>

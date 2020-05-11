@@ -53,17 +53,6 @@ class App extends Component {
    }
 
   render () {
-    const style = {
-      backgroundColor: 'green',
-      font: 'inherit',
-      border: '2px solid LightBlue',
-      padding: '18 px',
-      cursor: 'pointer',
-      ':hover': {
-        backgroundColor: 'lightgreen',
-        color: 'black'
-      },
-    };
     
     let persons = null;
 

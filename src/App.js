@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person';
-import styled from 'styled-components'
 
 class App extends Component {
   state = {
@@ -88,7 +87,7 @@ class App extends Component {
         <p className={classes.join(' ')}>How ya doing?</p>
         <button
           className='button'
-          onClick={this.togglePersonHandler}> Toggle Persons </StyledButton>
+          onClick={this.togglePersonHandler}> Toggle Persons </button>
           {persons}
       </div>
     );

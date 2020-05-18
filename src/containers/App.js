@@ -55,8 +55,6 @@ class App extends Component {
   render () {
     
     let persons = null;
-    let btnClass = [classes.Button]
-
     if (this.state.showPersons) {
       persons = (
         <div>
@@ -67,21 +65,10 @@ class App extends Component {
           />
         </div>
       );
-      btnClass.push(classes.Red)
-    }
-
-     let assignedClasses = [];
-
-    if (this.state.persons.length <= 2) {
-      assignedClasses.push(classes.red);
-    }
-    if (this.state.persons.length <= 1) {
-      assignedClasses.push(classes.bold)
     }
 
    return (
       <div className={classes.App}>
-        
           {persons}
       </div>
     );

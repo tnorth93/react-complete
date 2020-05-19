@@ -20,10 +20,10 @@
     color: black;
   }
   
-  .Cockpit button.red {
+  .Cockpit button.Red {
     background-color: red;
   }
   
-  .Cockpit button.red:hover {
+  .Cockpit button.Red:hover {
     background-color: salmon;
   }

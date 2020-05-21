@@ -19,7 +19,7 @@ class App extends Component {
       persons: [
         { name: newName, age: 26 },
         { name: 'Kelly', age: 27 },
-        { name: 'Nero', age: 4 },
+        { name: 'Nero Beans', age: 4 },
       ]
     })
    }

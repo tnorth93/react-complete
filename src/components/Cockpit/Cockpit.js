@@ -7,7 +7,7 @@ const cockpit = (props) => {
         setTimeout(() => {
             alert('Saved data to the cloud');
         }, 1000);
-    }, [props.persons]);
+    }, []);
 
     let assignedClasses = [];
     let btnClass = '';
@@ -23,7 +23,7 @@ const cockpit = (props) => {
     }
     return (
         <div className={classes.Cockpit}>
-            <h1>Hi, I'm a React App</h1>
+            <h1>{props.title}</h1>
             <p className={assignedClasses.join(' ')}>How ya doing?</p>
             <button
                 className={btnClass}

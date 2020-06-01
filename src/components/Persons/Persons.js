@@ -12,4 +12,4 @@ const persons = (props) =>
         />
       });
 
-      export default persons;
+export default persons;

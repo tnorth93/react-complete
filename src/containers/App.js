@@ -23,6 +23,10 @@ class App extends Component {
     console.log('[App.js] getDerivedStateFromProps', props);
     return state
   }
+
+  componentDidMount() {
+    console.log('[App.js] componentDidMount');
+  }
   
   switchNameHandler = ( newName ) => {
     this.setState( {
@@ -64,7 +68,7 @@ class App extends Component {
    }
 
   render () {
-    
+    console.log('[App.js] render');
     let persons = null;
     if (this.state.showPersons) {
       persons =

@@ -7,7 +7,17 @@ const cockpit = (props) => {
         setTimeout(() => {
             alert('Saved data to the cloud');
         }, 1000);
+        return () => {
+            console.log('[Cockpit.js] cleanup work in useEffect');
+        }
     }, []);
+
+    useEffect(() => {
+        console.log('[Cockpit.js] 2nd useEffect');
+        return () => {
+            console.log('[Cockpit.js] cleanup work in 2nd useEffect');
+        };
+    });
 
     let assignedClasses = [];
     let btnClass = '';
@@ -21,6 +31,7 @@ const cockpit = (props) => {
     if (props.persons.length <= 1) {
       assignedClasses.push(classes.bold)
     }
+
     return (
         <div className={classes.Cockpit}>
             <h1>{props.title}</h1>

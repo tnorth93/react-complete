@@ -15,10 +15,12 @@ class Person extends Component {
     // this.inputElement.focus();
     this.inputElementRef.current.focus();
   }
+
   render() {
     console.log('[Person.js] rendering...')
     return (
       <Auxiliary>
+        {this.props.isAuth ? <p>Authenticated</p> : <p>Please log in</p>}
         <p key='i1' onClick={this.props.click}>
           I'm {this.props.name} and I'm {this.props.age} years old
         </p>

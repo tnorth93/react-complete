@@ -35,16 +35,18 @@ const cockpit = (props) => {
       assignedClasses.push(classes.bold)
     }
 
-    return (
-        <div className={classes.Cockpit}>
-            <h1>{props.title}</h1>
-            <p className={assignedClasses.join(' ')}>How ya doing?</p>
-            <button
-                ref={toggleBtnRef}
-                className={btnClass}
-                onClick={props.clicked}> Toggle Persons </button>
-        </div>
-    );
+  return (
+    <div className={classes.Cockpit}>
+      <h1>{props.title}</h1>
+      <p className={assignedClasses.join(' ')}>How ya doing?</p>
+      <button
+        ref={toggleBtnRef}
+        className={btnClass}
+        onClick={props.clicked}> Toggle Persons
+    	</button>
+			<button onClick={props.login}>Log In</button>
+    </div>
+  );
 };
 
 export default React.memo(cockpit);

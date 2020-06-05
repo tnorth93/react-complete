@@ -48,7 +48,6 @@ const cockpit = (props) => {
 			<AuthContext.Consumer>
 				{context => <button onClick={context.login}>Log In</button>}
 			</AuthContext.Consumer>
-			
     </div>
   );
 };
